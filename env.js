@@ -20,11 +20,6 @@ export const RSA_PATH = assertValue(
     'RSA_PATH not configured'
 )
 
-export const PASS_PHRASE = assertValue(
-    process.env.PASS_PHRASE,
-    'PASS_PHRASE not configured'
-)
-
 export const SERVER_FILE_PATH = assertValue(
     process.env.SERVER_FILE_PATH,
     'SERVER_FILE_PATH not configured'
