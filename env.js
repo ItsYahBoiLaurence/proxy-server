@@ -24,6 +24,10 @@ export const SERVER_FILE_PATH = assertValue(
     process.env.SERVER_FILE_PATH,
     'SERVER_FILE_PATH not configured'
 )
+export const SFTP_PASSWORD = assertValue(
+    process.env.SFTP_PASSWORD,
+    'SFTP_PASSWORD not configured'
+)
 
 function assertValue(v, errorMessage) {
     if (v === undefined) {

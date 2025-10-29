@@ -8,7 +8,8 @@ import {
     SFTP_PORT,
     SFTP_HOST,
     RSA_PATH,
-    SERVER_FILE_PATH
+    SERVER_FILE_PATH,
+    SFTP_PASSWORD
 } from './env.js'
 
 const app = express()
