@@ -24,14 +24,17 @@ app.get('/', (req, res) => {
 
 app.get('/testUpload', async (req, res) => {
     const sftp = new Client()
+    console.log("called")
 
     try {
-        await sftp.connect({
+        const sftpConnect = await sftp.connect({
             host: SFTP_HOST,
             port: SFTP_PORT,
             username: SFTP_USER,
             password: SFTP_PASSWORD,
         })
+
+        console.log(sftpConnect)
         await sftp.end()
     } catch (e) {
         console.log(e)
