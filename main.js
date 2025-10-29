@@ -31,7 +31,6 @@ app.get('/testUpload', async (req, res) => {
             port: SFTP_PORT,
             username: SFTP_USER,
             password: SFTP_PASSWORD,
-            privateKey: fs.readFileSync(RSA_PATH),
         })
         await sftp.end()
     } catch (e) {
