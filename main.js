@@ -8,7 +8,6 @@ import {
     SFTP_PORT,
     SFTP_HOST,
     RSA_PATH,
-    PASS_PHRASE,
     SERVER_FILE_PATH
 } from './env.js'
 
