@@ -14,6 +14,7 @@ import {
 
 const app = express()
 const PORT = 3000
+const HOST = '0.0.0.0'
 
 const upload = multer({ dest: 'uploads/' })
 
@@ -59,6 +60,6 @@ app.post('/uploadFile', upload.single('file'), async (req, res) => {
     // }
 })
 
-app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`)
+app.listen(PORT, HOST, () => {
+    console.log(`Server running on http://${HOST}:${PORT}`)
 })
